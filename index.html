@@ -3,7 +3,7 @@
   <head>
     <title>Danjiel's Music</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
   </head>
   
   
@@ -24,6 +24,16 @@
       <h1>Danjiel's Music</h1>
       <p><a href="#songshyperlink" class="mainButton signIn yellowBack">The Best Song's</a></p>
     </header>
+    
+    
+    <!--  About  -->
+    <div>
+      <h2>About</h2>
+      <p class="longText">This Website is made by Lukas Koder and provides a Platform for Daniel to upload his Music. This Website is completely free and is concipied to give u some hell of music masterpieces. you can also download all Songs at once if you click on the 'Download Songs' Button in the Menu, at the top of the screen. Or you can Click on the Download Button on every individual Song.</p>
+    </div>
+    <hr>
+    
+    
     
     <!--  Songs  -->
     <div class ="songs" id="songshyperlink">
@@ -91,16 +101,22 @@
       </div>
       <hr>
       
+      
+      <audio id="sometimesSong">
+        <source src="music/Sometimes.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
       <div class="song1">
         <ul>
-          <li class="smallitemSong">Titel</li>
-          <li class="smallitemSong"><img src="img/playbutton_white.png" alt="Playbutton"class"playbutton"></li>
+          <li class="smallitemSong">Sometimes</li>
+          <li class="smallitemSong"><button onclick="playSometimes()" type="button" class="playbutton"><img src="img/playbutton_white.png" alt="Playbutton" id="playbutton5"></button></li>
           <li class="timeline">Timeline</li>
-          <li class="smallitemSong">0:00</li>
+          <li class="smallitemSong">3:55</li>
         </ul>
       </div>
       <hr>
     </div>
+    
     <!--  Script  -->
     <script>
     
@@ -137,24 +153,30 @@
         }
       }
       
-      var c = document.getElementById("pianoSong");
+      var b = document.getElementById("pianoSong");
       function playPiano(){
-        if(c.paused) {
+        if(b.paused) {
           document.getElementById("playbutton4").src="img/pauseButton_white.png";
-          c.play();
+          b.play();
         }else {
           document.getElementById("playbutton4").src="img/playbutton_white.png";
-          c.pause();
+          b.pause();
+        }
+      }
+      
+      var v = document.getElementById("sometimesSong");
+      function playSometimes(){
+        if(v.paused) {
+          document.getElementById("playbutton5").src="img/pauseButton_white.png";
+          v.play();
+        }else {
+          document.getElementById("playbutton5").src="img/playbutton_white.png";
+          v.pause();
         }
       }
       
     </script>
-    
-    <!--  About  -->
-    <div>
-      <h2>About</h2>
-      <p class="longText">This Website is made by Lukas Koder and provides a Platform for Daniel to upload his Music. This Website is completely free and is concipied to give u some hell of music masterpieces. >ou can also download them if you click on the 'Download Song' Button in the Menu, at the top of the screen.</p>
-    </div>
+   
     
     <!--  Footer  -->
     <footer>

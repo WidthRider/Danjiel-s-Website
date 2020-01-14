@@ -185,12 +185,12 @@ p {
   
 }
 .timeline {
-  flex: 0 0 50%;
+  flex: 0 0 20%;
   background-color: #a4a4a4;
 }
 
 .smallitemSong {
-  flex: 0 0 10%;
+  flex: 0 0 2%;
 }
 .song1 li {
   margin:0 15px;
@@ -210,6 +210,14 @@ p {
 }
 
 @media (min-width: 600px){
+  
+  .timeline {
+  flex: 0 0 50%;
+  background-color: #a4a4a4;
+  }
+  .smallitemSong {
+    flex: 0 0 10%;
+  }
   .menu {
     /*display:flex;*/
     align-content:center;
