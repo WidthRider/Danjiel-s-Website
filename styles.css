@@ -181,11 +181,18 @@ p {
   background: linear-gradient(0.25turn, rgba(0,0,0,0), #000, rgba(0,0,0,0));
   align-items:center;
   padding-left:0;
+  justify-content:space-between;
+  
+}
+.timeline {
+  flex: 0 0 50%;
+  background-color: #a4a4a4;
 }
 
+.smallitemSong {
+  flex: 0 0 10%;
+}
 .song1 li {
-  flex-grow:1;
-  /*border: 2px solid red;*/
   margin:0 15px;
 }
 
@@ -193,11 +200,6 @@ p {
   background-color: rgba(0,0,0,0);
   border-color: rgba(0,0,0,0);
   outline:none;
-}
-
-.timeline {
-  flex: 1 400px;
-  background-color: #a4a4a4;
 }
 
 .longText {
