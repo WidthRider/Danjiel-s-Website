@@ -90,6 +90,7 @@ p {
   }
   p:hover {
     transform:scale(1.2,1.2);
+    color: white;
   }
   li:hover {
     transform:scale(1.2,1.2);
@@ -99,7 +100,7 @@ p {
     transform:scale(1.2,1.2) rotate(-3deg);
   }
   h1:hover {
-    transform:scale(1.2,1.2) rotate(3deg);
+    transform:scale(1.1,1.1) rotate(1deg);
   }
   h2:hover {
     transform:scale(1.2,1.2) rotate(3deg);
@@ -189,7 +190,9 @@ p {
 }
 
 .playbutton {
-  
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+  outline:none;
 }
 
 .timeline {

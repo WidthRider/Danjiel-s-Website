@@ -8,7 +8,6 @@
   
   
   <body>
-    
     <!--  Menu  -->
     <div class="menu">
       <h3>Danjiel</h3>
@@ -31,42 +30,51 @@
       <h2>Songs</h2>
       <hr>
       
+      
+      <audio id="watchSong">
+        <source src="Danio - Watch (Original Mix).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
       <div class="song1">
         <ul>
-          <li>Titel</li>
-          <li><img src="img/playbutton_white.png" alt="Playbutton"class"playbutton"></li>
+          <li>Watch (Original Mix)</li>
+          <li><button onclick="playWatch()" type="button" class="playbutton"><img src="img/playbutton_white.png" alt="Playbutton"class"playbutton"></button></li>
+          <!--<li><img src="img/playbutton_white.png" alt="Playbutton"class"playbutton"></li>-->
           <li class="timeline">Timeline</li>
-          <li>0:00</li>
+          <li>3:20</li>
         </ul>
       </div>
       <hr>
       
+      
+      <audio id="mollySong">
+        <source src="Molly.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
       <div class="song1">
         <ul>
-          <li>Titel</li>
-          <li><img src="img/playbutton_white.png" alt="Playbutton"class"playbutton"></li>
+          <li>Molly</li>
+          <li><button onclick="playMolly()" type="button" class="playbutton"><img src="img/playbutton_white.png" alt="Playbutton"class"playbutton"></button></li>
           <li class="timeline">Timeline</li>
-          <li>0:00</li>
+          <li>4:37</li>
         </ul>
       </div>
       <hr>
       
-      <div class="song1">
-        <ul>
-          <li>Titel</li>
-          <li><img src="img/playbutton_white.png" alt="Playbutton"class"playbutton"></li>
-          <li class="timeline">Timeline</li>
-          <li>0:00</li>
-        </ul>
-      </div>
-      <hr>
+      
+      <audio id="chillSong">
+        <source src="Basic Chill.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
       
       <div class="song1">
         <ul>
-          <li>Titel</li>
-          <li><img src="img/playbutton_white.png" alt="Playbutton"class"playbutton"></li>
+          <li>Basic Chill</li>
+          <li><button onclick="playChill()" type="button" class="playbutton"><img src="img/playbutton_white.png" alt="Playbutton"class"playbutton"></button></li>
           <li class="timeline">Timeline</li>
-          <li>0:00</li>
+          <li>4:08</li>
         </ul>
       </div>
       <hr>
@@ -91,6 +99,37 @@
       </div>
       <hr>
     </div>
+    <!--  Script  -->
+    <script>
+    
+      var x = document.getElementById("watchSong");
+      function playWatch(){
+        if(x.paused) {
+          x.play();
+        }else {
+          x.pause();
+        }
+      }
+      
+      var y = document.getElementById("mollySong");
+      function playMolly(){
+        if(y.paused) {
+          y.play();
+        }else {
+          y.pause();
+        }
+      }
+      
+      var c = document.getElementById("chillSong");
+      function playChill(){
+        if(c.paused) {
+          c.play();
+        }else {
+          c.pause();
+        }
+      }
+      
+    </script>
     
     <!--  About  -->
     <div>
