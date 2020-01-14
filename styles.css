@@ -1,0 +1,249 @@
+/*Objects*/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin:0;
+  background-color:#171717;
+  color: #a4a4a4;
+  font-weight:100;
+}
+img {
+  /*max-width:15%;*/
+  width: 100px;
+  height: 100px;
+  transition-property: all;
+  transition-duration:.25s;
+}
+
+li {
+  list-style:none;
+  transition-property: all;
+  transition-duration:.25s;
+}
+
+ul {
+  margin:0;
+}
+
+h1 {
+  padding-bottom:0px;
+  padding-top:50px;
+  color: white;
+  font-size: 100px;
+  text-shadow: 1px 1px 0 black;
+  word-spacing: .2em;
+  transition-property: all;
+  transition-duration:.25s;
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align:center;
+  font-size: 4em;
+  transition-property: all;
+  transition-duration:.25s;
+  margin-bottom: .5em;
+}
+
+h3 {
+  margin:0 10px 0 0;
+  color: #fed941;
+  padding:10px 10px 0px 10px;
+  text-align:center;
+  font-size: 2.5em;
+  transition-property: all;
+  transition-duration:.25s;
+}
+
+a {
+  text-decoration:none;
+  color: #a4a4a4;
+  transition-property:all;
+  transition-duration:.25s;
+}
+
+hr {
+  width: 80%;
+  border: 1px solid #2d2d2d;
+}
+
+p {
+  text-align:center;
+  transition-property: all;
+  transition-duration:.25s;
+}
+/*Hovers*/
+
+/*@media (any-hover: hover){*/
+  a:hover {
+    color: white;
+  }
+  .signIn:hover{
+    background-color: rgba(253,216,81,.9);
+    border-color: rgba(253,216,81,.9);
+  }
+  .yellowBack:hover {
+    color: black;
+  }
+  
+  img:hover {
+    transform:scale(1.2,1.2) rotate(-5deg);
+  }
+  p:hover {
+    transform:scale(1.2,1.2);
+  }
+  li:hover {
+    transform:scale(1.2,1.2);
+    color: white;
+  }
+  h3:hover {
+    transform:scale(1.2,1.2) rotate(-3deg);
+  }
+  h1:hover {
+    transform:scale(1.2,1.2) rotate(3deg);
+  }
+  h2:hover {
+    transform:scale(1.2,1.2) rotate(3deg);
+    color: white;
+  }
+  .timeline:hover{
+    color: #a4a4a4;
+    transform:scale(1.0,1.5);
+  }
+/*}*/
+
+/*classes*/
+
+.menu {
+  /*position:fixed;*/
+  width:100%;
+  background:#373737;
+  /*display:flex;*/
+  flex-wrap:wrap;
+  align-items:center;
+  padding: 5px 0;
+}
+
+.options {
+  padding:0;
+  /*display:flex;*/
+  margin-left:auto;
+  text-align:center;
+}
+
+.options li {
+  padding: 5px 15px;
+  font-size: 2.5em;
+}
+
+.signIn {
+  padding: 5px 15px;
+  color: black;
+  border: 0 solid #fed941;
+  border-radius: 50px;
+  background-color: #fed941;
+}
+
+.main-header {
+  /*z-index:-1;
+  position:fixed;
+  width:100%;*/
+  /*border-top: 200px solid grey;*/
+  font-weight: bold;
+  text-align:center;
+  padding-top: 25px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(rgba(0,0,0, 0) 70%, #171717 ),
+              linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, #D5488A, rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70.71%),
+              url("img/abstract_background2.jpg");
+  background-size:cover;
+}
+
+.mainButton {
+  padding: 15px 40px;
+  font-size: 30px;
+}
+
+.songs {
+  /*background-color:#171717;
+  background-clip:padding-box;
+  border-top: 500px solid rgba(0,0,0,0);*/
+  text-align:center;
+  /*display:flex;*/
+  flex-flow:column;
+}
+.song1 ul{
+  display:flex;
+  width:80%;
+  margin:auto;
+  background: linear-gradient(0.25turn, rgba(0,0,0,0), #000, rgba(0,0,0,0));
+  align-items:center;
+  padding-left:0;
+}
+
+.song1 li {
+  flex-grow:1;
+  /*border: 2px solid red;*/
+  margin:0 15px;
+}
+
+.playbutton {
+  
+}
+
+.timeline {
+  flex: 1 400px;
+  background-color: #a4a4a4;
+}
+
+.longText {
+  width: 50%;
+    margin:auto;
+    margin-bottom: 30px;
+  
+}
+
+@media (min-width: 600px){
+  .menu {
+    /*display:flex;*/
+    align-content:center;
+  }
+  .options {
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 10px;
+  }
+  .options li {
+    font-size: 1.5em;
+  }
+  h1 {
+    width: 55%;
+    margin:auto;
+    margin-bottom: 30px;
+  }
+  h2 {
+    text-align:center;
+    margin-bottom: .5em;
+  }
+}
+
+@media (min-width: 755px){
+  .menu {
+    display:flex;
+    position:fixed;
+  }
+  .options {
+    padding-bottom: 0;
+  }
+  .options li {
+    font-size: 1em;
+  }
+  h3 {
+    padding:10px 10px;
+    font-size: 1.5em;
+  }
+  .main-header {
+    border-top: 45px solid grey;
+  }
+}
