@@ -40,143 +40,40 @@
       <h2>Songs</h2>
       <hr>
       
-      
       <audio id="watchSong">
         <source src="music/Danio - Watch (Original Mix).mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
       
-      <div class="song1">
-        <ul>
-          <li class="smallitemSong">Watch (Original Mix)</li>
-          <li class="smallitemSong"><button onclick="playWatch()" type="button" class="playbutton"><img src="img/playbutton_white.png" alt="Playbutton" id="playbutton1"></button></li>
-          <li class="timeline">Timeline</li>
-          <li class="smallitemSong">3:20</li>
-        </ul>
-      </div>
-      <hr>
-      
-      
       <audio id="mollySong">
         <source src="music/Molly.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
-      </audio>
-      <div class="song1">
-        <ul>
-          <li class="smallitemSong">Molly</li>
-          <li class="smallitemSong"><button onclick="playMolly()" type="button" class="playbutton"><img src="img/playbutton_white.png" alt="Playbutton" id="playbutton2"></button></li>
-          <li class="timeline">Timeline</li>
-          <li class="smallitemSong">4:37</li>
-        </ul>
-      </div>
-      <hr>
-      
+      </audio>      
       
       <audio id="chillSong">
         <source src="music/Basic Chill.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
-      </audio>
-      <div class="song1">
-        <ul>
-          <li class="smallitemSong">Basic Chill</li>
-          <li class="smallitemSong"><button onclick="playChill()" type="button" class="playbutton"><img src="img/playbutton_white.png" alt="Playbutton" id="playbutton3"></button></li>
-          <li class="timeline">Timeline</li>
-          <li class="smallitemSong">4:08</li>
-        </ul>
-      </div>
-      <hr>
-      
+      </audio>      
       
       <audio id="pianoSong">
         <source src="music/-Piano-.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
-      </audio>
-      <div class="song1">
-        <ul>
-          <li class="smallitemSong">-Piano-</li>
-          <li class="smallitemSong"><button onclick="playPiano()" type="button" class="playbutton"><img src="img/playbutton_white.png" alt="Playbutton" id="playbutton4"></button></li>
-          <li class="timeline">Timeline</li>
-          <li class="smallitemSong">3:50</li>
-        </ul>
-      </div>
-      <hr>
-      
+      </audio>      
       
       <audio id="sometimesSong">
         <source src="music/Sometimes.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
+      </audio>      
+    
+      <audio id="relaxSong">
+        <source src="music/Relax.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
       </audio>
-      <div class="song1">
-        <ul>
-          <li class="smallitemSong">Sometimes</li>
-          <li class="smallitemSong"><button onclick="playSometimes()" type="button" class="playbutton"><img src="img/playbutton_white.png" alt="Playbutton" id="playbutton5"></button></li>
-          <li class="timeline">Timeline</li>
-          <li class="smallitemSong">3:55</li>
-        </ul>
-      </div>
-      <hr>
     </div>
     
     <!--  Script  -->
-    <script>
-    
-      var x = document.getElementById("watchSong");
-      function playWatch(){
-        if(x.paused) {
-          document.getElementById("playbutton1").src="img/pauseButton_white.png";
-          x.play();
-        }else {
-          document.getElementById("playbutton1").src="img/playbutton_white.png";
-          x.pause();
-        }
-      }
-      
-      var y = document.getElementById("mollySong");
-      function playMolly(){
-        if(y.paused) {
-          document.getElementById("playbutton2").src="img/pauseButton_white.png";
-          y.play();
-        }else {
-          document.getElementById("playbutton2").src="img/playbutton_white.png";
-          y.pause();
-        }
-      }
-      
-      var c = document.getElementById("chillSong");
-      function playChill(){
-        if(c.paused) {
-          document.getElementById("playbutton3").src="img/pauseButton_white.png";
-          c.play();
-        }else {
-          document.getElementById("playbutton3").src="img/playbutton_white.png";
-          c.pause();
-        }
-      }
-      
-      var b = document.getElementById("pianoSong");
-      function playPiano(){
-        if(b.paused) {
-          document.getElementById("playbutton4").src="img/pauseButton_white.png";
-          b.play();
-        }else {
-          document.getElementById("playbutton4").src="img/playbutton_white.png";
-          b.pause();
-        }
-      }
-      
-      var v = document.getElementById("sometimesSong");
-      function playSometimes(){
-        if(v.paused) {
-          document.getElementById("playbutton5").src="img/pauseButton_white.png";
-          v.play();
-        }else {
-          document.getElementById("playbutton5").src="img/playbutton_white.png";
-          v.pause();
-        }
-      }
-      
-    </script>
-   
+    <script src="app.js"></script>
+    <div class="test"></div>
     
     <!--  Footer  -->
     <footer>

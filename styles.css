@@ -8,8 +8,8 @@ body {
 }
 img {
   /*max-width:15%;*/
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   transition-property: all;
   transition-duration:.25s;
 }
@@ -71,9 +71,20 @@ p {
   transition-property: all;
   transition-duration:.25s;
 }
-/*Hovers*/
 
-/*@media (any-hover: hover){*/
+progress {
+  width:100%;
+  background-color: #a4a4a4;
+  border-radius: 15px;
+  -webkit-color:#fed941;
+  
+}
+progress[value]::-webkit-progress-value{
+  background-image:
+    -webkit-color:#fed941;
+}
+/*Pseudo Elements*/
+
   a:hover {
     color: white;
   }
@@ -86,7 +97,13 @@ p {
   }
   
   img:hover {
+    transform:scale(1.1,1.1);
+  }
+  img:active {
     transform:scale(1.2,1.2) rotate(-5deg);
+  }
+  .stopbutton:active {
+    transform:scale(1.3,1.3) rotate(-5deg);
   }
   p:hover {
     transform:scale(1.2,1.2);
@@ -110,7 +127,6 @@ p {
     color: #a4a4a4;
     transform:scale(1.0,1.5);
   }
-/*}*/
 
 /*classes*/
 
@@ -186,20 +202,30 @@ p {
 }
 .timeline {
   flex: 0 0 20%;
-  background-color: #a4a4a4;
+  background-color: rgba(0,0,0,0);
 }
 
 .smallitemSong {
-  flex: 0 0 2%;
+  flex: 0 0 10%;
 }
 .song1 li {
-  margin:0 15px;
+  margin:0;
 }
 
 .playbutton {
   background-color: rgba(0,0,0,0);
   border-color: rgba(0,0,0,0);
   outline:none;
+}
+.stopbutton {
+  height:40px;
+  border-radius:10px;
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,0,0,0);
+  outline:none;
+  color:white;
+  transition-property: all;
+  transition-duration:.25s;
 }
 
 .longText {
@@ -210,13 +236,9 @@ p {
 }
 
 @media (min-width: 600px){
-  
   .timeline {
-  flex: 0 0 50%;
+  flex: 0 0 40%;
   background-color: #a4a4a4;
-  }
-  .smallitemSong {
-    flex: 0 0 10%;
   }
   .menu {
     /*display:flex;*/
@@ -224,10 +246,12 @@ p {
   }
   .options {
     display:flex;
-    justify-content:space-around;
+    /*justify-content:space-around;*/
     padding-bottom: 10px;
   }
   .options li {
+    flex-basis: 1;
+    flex: 1 1 0px;
     font-size: 1.5em;
   }
   h1 {
@@ -247,9 +271,12 @@ p {
     position:fixed;
   }
   .options {
+    justify-content:space-around;
     padding-bottom: 0;
   }
   .options li {
+    flex-basis: 1;
+    flex: auto;
     font-size: 1em;
   }
   h3 {
